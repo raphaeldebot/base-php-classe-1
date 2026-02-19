@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
     <title>Ma page - <?= date("Y-m-d H:i:s") ?></title>
 </head>
 <body>
