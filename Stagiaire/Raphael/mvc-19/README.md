@@ -43,6 +43,28 @@ Mettez-y des `.gitkeep` dans chaque dossier et faites des commit.
 # On protège nos variables et constantes dangereuses
 # du fichier config.php
 config.php
+
+<?php
+# Stagiaire/Raphael/mvc-19/config.php
+
+// constante (variable qui ne peut être 
+// redéfinie pendant la durée du script)
+
+# __DIR__ constante magique qui donnera 
+# le chemin absolu vers la racine du projet
+const ROOT_PATH = __DIR__; 
 ```
 
 Créez le fichier `config.php` à la racine du projet. Il est protégé grâce au `.gitconfig`.
+
+### Phase 2
+
+#### Création du controlleur frontal
+
+Le front controller, nommé `public/index.php`, est le seul fichier `php` qui sera accessible à un utilisateur externe.
+
+#### Création du config.php
+
+Il va devoir recréer config.php pour accéder au constantes de sécurité.
+
+        cp config.ini.php config.php
